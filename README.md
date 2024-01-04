@@ -65,10 +65,16 @@ These experiments collectively aim to optimise the clustering approach for the p
 
 
 ## Section 4-  Results 
-Among the clustering methods (K-means, Hierarchical, and DBSCAN) tested, DBSCAN showed the most promising results in terms of forming well-defined and meaningful clusters. This was indicated by the highest Silhouette Score and lowest Davies-Bouldin Index, suggesting better-defined and compact clusters. K-means was effective for general segmentation but lacked the flexibility in identifying clusters of arbitrary shapes and handling noise and outliers as effectively as DBSCAN. Hierarchical Clustering provided valuable insights into the hierarchical structure of the data but was less effective in clearly delineating distinct customer segments compared to DBSCAN. Strategies for handling missing data significantly influenced the clustering results. Mean/Median/Mode Imputation methods were found to be more effective than row deletion, preserving data integrity and leading to more reliable clustering outcomes. Visualisations like Missingno matrix plots and bar charts were crucial in understanding the pattern of missing data, guiding effective data imputation strategies. Data preprocessing techniques, including normalisation and handling of categorical variables, played a critical role in enhancing the performance of clustering models. Feature engineering, particularly the selection and transformation of relevant features, significantly impacted the clustering results.
+Among the clustering methods (K-means, Hierarchical, and DBSCAN) tested, DBSCAN showed the most promising results in terms of forming well-defined and meaningful clusters. 
+![DBSCAN](images/DBSCAN.png)
+This was indicated by the highest Silhouette Score and lowest Davies-Bouldin Index, suggesting better-defined and compact clusters. K-means was effective for general segmentation but lacked the flexibility in identifying clusters of arbitrary shapes and handling noise and outliers as effectively as DBSCAN. 
+![Kmeans](images/kmeans.png)
+
+Hierarchical Clustering provided valuable insights into the hierarchical structure of the data but was less effective in clearly delineating distinct customer segments compared to DBSCAN. Strategies for handling missing data significantly influenced the clustering results. 
+![Hierarchical Clustering](images/Hierarchical.png)
 
 
-
+Imputation methods were found to be more effective than row deletion, preserving data integrity and leading to more reliable clustering outcomes. Visualisations like Missingno matrix plots and bar charts were crucial in understanding the pattern of missing data, guiding effective data imputation strategies. Data preprocessing techniques, including normalisation and handling of categorical variables, played a critical role in enhancing the performance of clustering models. Feature engineering, particularly the selection and transformation of relevant features, significantly impacted the clustering results.
 
 ## Section 5 - Conclusions 
 The project's main conclusion centres around the effectiveness of DBSCAN in clustering, which emerged as the most efficient method due to its superior handling of noise and ability to identify clusters with arbitrary shapes. This characteristic of DBSCAN proves especially valuable in the e-commerce domain where customer behaviours and interactions can form complex, non-linear patterns that are not adequately captured by more traditional clustering methods like K-means.
