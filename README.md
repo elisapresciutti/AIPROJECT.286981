@@ -1,8 +1,6 @@
 # AIPROJECT.286981
 # SHOPEASY PROJECT
 
-# AIPROJECT.286981
-# SHOPEASY PROJECT
 
 ## - Team Members
 - Lucrezia Salerno 
